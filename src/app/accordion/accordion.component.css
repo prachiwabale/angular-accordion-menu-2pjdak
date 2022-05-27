@@ -1,0 +1,132 @@
+.container {
+  top: 0px;
+  left: 0px;
+  width: 2025px;
+  height: 2517px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.accordion-close {
+  position: relative;
+  top: 330px;
+  left: 267px;
+  width: 1395px;
+  height: 760px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+}
+
+.accordion-menu {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  width: 1352px;
+  height: 644px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  opacity: 1;
+}
+.container > h2 {
+  position: absolute;
+  top: 24px;
+  left: 295px;
+  width: 1041px;
+  height: 40px;
+  /* UI Properties */
+
+  text-align: left;
+  font-family: proxima-nova, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0px;
+  color: #00000099;
+  opacity: 1;
+}
+
+.container > h1 {
+  position: absolute;
+  top: 25px;
+  left: 100px;
+  width: 76px;
+  height: 36px;
+  /* UI Properties */
+
+  text-align: left;
+  font-family: proxima-nova, sans-serif;
+  font-size: 30px;
+  letter-spacing: 0px;
+  color: #555555;
+  opacity: 1;
+}
+
+.accordion .menu {
+  position: relative;
+
+  /* UI Properties */
+  letter-spacing: 0px;
+  color: #0070a9;
+  opacity: 1;
+  padding: 15px 15px 15px 45px;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.accordion-menu img {
+  position: absolute;
+  top: 17px;
+  left: 7px;
+}
+
+.container li.active i {
+  color: #b63b4d;
+}
+
+.accordion-menu .submenu {
+  position: relative;
+  overflow: hidden;
+  width: 900px;
+  border-bottom: 1px solid #ccc;
+  background: #ffffff;
+  font-size: 14px;
+  transition: height 0.4s ease;
+}
+
+.submenu h1 {
+  position: relative;
+  top: -25px;
+  width: 871px;
+  height: 22px;
+  margin-left: 40px;
+  /* UI Properties */
+
+  text-align: left;
+  font-family: proxima-nova, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #555555;
+}
+.submenu p {
+  position: relative;
+  top: -45px;
+  width: 871px;
+  height: 18px;
+  margin-left: 40px;
+  /* UI Properties */
+
+  text-align: left;
+  font: normal normal normal 16px/28px Proxima Nova;
+  letter-spacing: 0px;
+  color: #888888;
+  margin-bottom: 15px;
+}
+.hidden-content {
+  overflow: auto;
+  max-height: 0;
+  color: $white;
+}
+.show-content {
+  max-height: 250px !important;
+}

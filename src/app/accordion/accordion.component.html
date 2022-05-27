@@ -1,0 +1,33 @@
+<div #accordionParent class="container">
+  <div class="accordion-close">
+    <div class="accordion-menu">
+      <ul id="accordion" class="accordion">
+        <li
+          *ngFor="let menu of menus; let i = index"
+          [class.active]="menu.active"
+        >
+          <div class="menu" (click)="toggle(i)">
+            <div class="hidden-content">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSI5LjYiIHZpZXdCb3g9IjAgMCAxNiA5LjYiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiNjNzUwMDA7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2IDkuNikgcm90YXRlKDE4MCkiPjxwYXRoIGNsYXNzPSJhIiBkPSJNLjQxMyw3LjE3N2ExLjQzMywxLjQzMywwLDAsMCwwLDIuMDA3LDEuMzc1LDEuMzc1LDAsMCwwLDEuOTczLDBMOCwzLjQ2MywxMy42MTksOS4xOGExLjM3NSwxLjM3NSwwLDAsMCwxLjk3MywwLDEuNDMzLDEuNDMzLDAsMCwwLDAtMi4wMDdMOS4yNzUuNzU2QTEuNCwxLjQsMCwwLDAsOS4wMjcuNDE1LDEuMzY4LDEuMzY4LDAsMCwwLDgsMCwxLjM3NiwxLjM3NiwwLDAsMCw2Ljk3MS40MTVhMS40LDEuNCwwLDAsMC0uMjQ2LjM0MVoiLz48L2c+PC9zdmc+"
+              />
+
+              {{ menu.name }}
+            </div>
+
+            <ul
+              class="submenu"
+              #submenu
+              [style.height.px]="menu.active ? submenu.scrollHeight : 0"
+            >
+              <li *ngFor="let submenu of menu.submenu">
+                <h1>{{ submenu.question }}</h1>
+                <p>{{ submenu.answer }}</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
